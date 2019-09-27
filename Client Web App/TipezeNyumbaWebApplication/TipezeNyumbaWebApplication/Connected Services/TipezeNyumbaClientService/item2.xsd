@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/TipezeNyumbaService.ModelsWrapperObjects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/TipezeNyumbaService.ModelsWrapperObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfUserDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserDetails" nillable="true" type="tns:UserDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserDetails" nillable="true" type="tns:ArrayOfUserDetails" />
+  <xs:complexType name="UserDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="userID" type="xs:int" />
+      <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="phoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dateTimeCreated" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="userRoleForUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userSubscriptionType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="accountState" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserDetails" nillable="true" type="tns:UserDetails" />
+  <xs:complexType name="UserDetailsToAddOrUpdate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="phoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userRoleForUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userSubscriptionType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserDetailsToAddOrUpdate" nillable="true" type="tns:UserDetailsToAddOrUpdate" />
+  <xs:complexType name="ArrayOfUserAccounState">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserAccounState" nillable="true" type="tns:UserAccounState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserAccounState" nillable="true" type="tns:ArrayOfUserAccounState" />
+  <xs:complexType name="UserAccounState">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="accountState" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="accountStateID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserAccounState" nillable="true" type="tns:UserAccounState" />
+  <xs:complexType name="ArrayOfUserType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserType" nillable="true" type="tns:UserType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserType" nillable="true" type="tns:ArrayOfUserType" />
+  <xs:complexType name="UserType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="userRoleForUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userTypeID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserType" nillable="true" type="tns:UserType" />
+  <xs:complexType name="ArrayOfUserSubscriptionType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserSubscriptionType" nillable="true" type="tns:UserSubscriptionType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserSubscriptionType" nillable="true" type="tns:ArrayOfUserSubscriptionType" />
+  <xs:complexType name="UserSubscriptionType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="subscription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="subscriptionTypeID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserSubscriptionType" nillable="true" type="tns:UserSubscriptionType" />
+  <xs:complexType name="HouseDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bedrooms" type="xs:int" />
+      <xs:element minOccurs="0" name="dateHouseWillBeAvailable" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dateUploaded" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="district" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fenceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="houseID" type="xs:int" />
+      <xs:element minOccurs="0" name="houseState" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="masterBedroomEnsuite" type="xs:boolean" />
+      <xs:element minOccurs="0" name="modeOfPayment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numberOfGarages" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="phoneNumber1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="phoneNumber2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="selfContained" type="xs:boolean" />
+      <xs:element minOccurs="0" name="whatsAppContactNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HouseDetails" nillable="true" type="tns:HouseDetails" />
+  <xs:complexType name="ArrayOfHouseDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HouseDetails" nillable="true" type="tns:HouseDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHouseDetails" nillable="true" type="tns:ArrayOfHouseDetails" />
+  <xs:complexType name="ArrayOfHousePaymentMode">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HousePaymentMode" nillable="true" type="tns:HousePaymentMode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHousePaymentMode" nillable="true" type="tns:ArrayOfHousePaymentMode" />
+  <xs:complexType name="HousePaymentMode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="modeOfPaymentID" type="xs:int" />
+      <xs:element minOccurs="0" name="paymentMode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HousePaymentMode" nillable="true" type="tns:HousePaymentMode" />
+  <xs:complexType name="ArrayOfHouseFenceType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HouseFenceType" nillable="true" type="tns:HouseFenceType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHouseFenceType" nillable="true" type="tns:ArrayOfHouseFenceType" />
+  <xs:complexType name="HouseFenceType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HouseFensetype" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fenceTypeID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HouseFenceType" nillable="true" type="tns:HouseFenceType" />
+  <xs:complexType name="ArrayOfHouseForRentState">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HouseForRentState" nillable="true" type="tns:HouseForRentState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHouseForRentState" nillable="true" type="tns:ArrayOfHouseForRentState" />
+  <xs:complexType name="HouseForRentState">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HouseStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="houseStateID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HouseForRentState" nillable="true" type="tns:HouseForRentState" />
+  <xs:complexType name="ArrayOfDistrictInMalawi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DistrictInMalawi" nillable="true" type="tns:DistrictInMalawi" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDistrictInMalawi" nillable="true" type="tns:ArrayOfDistrictInMalawi" />
+  <xs:complexType name="DistrictInMalawi">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="districtID" type="xs:int" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DistrictInMalawi" nillable="true" type="tns:DistrictInMalawi" />
+</xs:schema>
